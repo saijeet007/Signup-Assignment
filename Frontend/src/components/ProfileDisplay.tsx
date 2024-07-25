@@ -37,7 +37,7 @@ const ProfileDisplay: React.FC = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/users');
+        const response = await axios.get('https://signup-assignment.onrender.com/users');
         setUsers(response.data);
       } catch (error) {
         console.error('Failed to fetch users', error);
@@ -49,7 +49,7 @@ const ProfileDisplay: React.FC = () => {
 
   const handleDelete = async (id: string) => {
     try {
-      await axios.delete(`http://localhost:5000/users/${id}`);
+      await axios.delete(`https://signup-assignment.onrender.com/users/${id}`);
       setUsers(users.filter(user => user._id !== id));
     } catch (error) {
       console.error('Failed to delete user', error);
@@ -85,8 +85,8 @@ const ProfileDisplay: React.FC = () => {
           updatedUser.append('profilePicture', formData.profilePicture);
         }
         const config = { headers: { 'Content-Type': 'multipart/form-data' } };
-        await axios.put(`http://localhost:5000/users/${editingUser._id}`, updatedUser, config);
-        const response = await axios.get('http://localhost:5000/users');
+        await axios.put(`https://signup-assignment.onrender.com/users/${editingUser._id}`, updatedUser, config);
+        const response = await axios.get('https://signup-assignment.onrender.com/users');
         setUsers(response.data);
         setEditingUser(null);
         setIsModalOpen(false);
@@ -116,7 +116,7 @@ const ProfileDisplay: React.FC = () => {
           >
             <div className="flex flex-col items-center">
               <img
-                src={user.profilePicture ? `http://localhost:5000${user.profilePicture}` : "https://via.placeholder.com/150"}
+                src={user.profilePicture ? `https://signup-assignment.onrender.com${user.profilePicture}` : "https://via.placeholder.com/150"}
                 alt={user.name}
                 className="w-32 h-32 rounded-full mb-4 object-cover"
               />

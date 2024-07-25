@@ -28,7 +28,7 @@ const SignupForm: React.FC = () => {
 
   const onSubmit = async (data: FormData) => {
     try {
-      await axios.post('http://localhost:5000/signup', data);
+      await axios.post('https://signup-assignment.onrender.com/signup', data);
       toast.success('User registered successfully!');
       navigate('/profiles');
     } catch (error) {
