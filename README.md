@@ -1,5 +1,5 @@
 
-# SignUp Page
+# SignUp Page-Assignment
  
 Created a web application that allows users to sign up by filling out a form with fields like 
 name, number, date of birth (DOB), email, and password. Implemented validation for each 
@@ -14,13 +14,13 @@ Also added optional Features as well
 
 - `frontend/`: Contains the React.js application.
 - `backend/`: Contains the Node.js application.
+- `db/`: MongoDB Atlas
 
 ## Prerequisites
 
 Before running the project, ensure you have the following installed:
 - Node.js (v20 or later)
 - npm (v10 or later) 
-- MongoDB Atlas account
 
 ## Setting Up
 1. Clone the repository to your local machine.
@@ -29,37 +29,6 @@ git clone https://github.com/saijeet007/Signup-Assignment.git
 ```
 
 ## Running the Project Locally
-
-### Backend
-
-1. **Navigate to the backend directory:**
-
-    ```bash
-    cd backend
-    ```
-
-2. **Install dependencies:**
-
-    ```bash
-    npm install
-   
-    ```
-
-3. **Create a `.env` file in the `backend/` directory with your MongoDB Atlas connection string:**
-
-    ```env
-    MONGO_URI=mongodb+srv://<username>:<password>@<cluster-url>/users?retryWrites=true&w=majority
-    ```
-
-    Replace `<username>`, `<password>`, and `<cluster-url>` with your MongoDB Atlas credentials.
-
-4. **Start the backend server:**
-
-    ```bash
-    node index.js
-    ```
-
-    The backend server should now be running on `https://signup-assignment.onrender.com`.
 
 ### Frontend
 
@@ -83,3 +52,28 @@ git clone https://github.com/saijeet007/Signup-Assignment.git
 
     The frontend development server should now be running on `http://localhost:5173`.
 
+## Screenshots 
+#### Sign-up Page
+![Signup ](image.png)
+
+#### Checks for Validation
+![Validation ](image-1.png)
+
+#### After filling all details correctly Signup button is enabled
+![Filled all details](image-2.png)
+
+#### Profile Display
+![User added Successfully](image-3.png)
+
+#### Login Functionality 
+![If user](image-4.png)
+
+#### Dark Mode Implementation for Signup page
+![Dark mode](image-6.png)
+
+#### Dark Mode Implementation for Profile Display
+![Dark Mode](image-5.png)
+
+
+#### Edit User Functionality and profile picture uploading
+![Edit User](image-7.png)
