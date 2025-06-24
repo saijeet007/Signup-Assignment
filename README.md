@@ -1,5 +1,5 @@
 
-# SignUp Page-Assignment
+# SignUp WebAPP
  
 Created a web application that allows users to sign up by filling out a form with fields like 
 name, number, date of birth (DOB), email, and password. Implemented validation for each 
